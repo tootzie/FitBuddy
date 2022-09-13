@@ -1,0 +1,32 @@
+PREDICTION WEIGHT
+
+cal_now : goal_calorie - remaining
+sub : [cal_now > goal] = cal_now - goal; [goal > cal_now] = goal - cal_now
+hitung : sub/goal_calorie = %x
+
+goal_calorie = 1400 cal
+remaining = -200
+
+cal_now : 1600
+sub : 1600 - 1400 = 200
+hitung : 200/1400 = 0.14 
+
+berat badan : hitung * 0.14 = 0.0196 kg
+
+if( remaining < 0 ) : prediction = weightNow + berat badan
+if( remaining > 0 ) : prediction = weightNow - berat badan
+else : prediction = weightNow
+================================================================================
+
+LOSE WEIGHT, MAINTAIN WEIGHT, GAIN WEIGHT 
+
+1. LOSE WEIGHT
+To lose weight, you need to reduce your caloric intake below your total daily calorie requirement indicated by your BMR + activity level. 
+Putting yourself in a 500-calorie deficit every day should result in the loss of one pound every week, Greaves says. (1 bulan bisa turun +- 1.8kg) 
+
+2. MAINTAIN WEIGHT 
+Sama seperti BMR
+
+3. GAIN WEIGHT 
+Ditambahi 500 kalori per hari dari BMR. 1 minggu naik 1 pound. Kalo di convert ke kg, 1 bulan naik 1.8kg
+=================================================================================
